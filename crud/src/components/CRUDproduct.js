@@ -124,7 +124,7 @@ const CRUDproduct = () => {
           style={{
             backgroundColor: "#ffffff",
             padding: "10px",
-            border: "1px solid #dee2e6",
+            border: "1px solid lightgray",
             borderRadius: "5px",
             margin: "10px",
           }}
@@ -132,8 +132,8 @@ const CRUDproduct = () => {
           <div
             className="row mb-2 font-weight-bold text-black"
             style={{
-              backgroundColor: "#d3d3d3",
-              padding: "5px",
+              backgroundColor: "lightgray",
+              padding: "4px",
               fontSize: "25px",
             }}
           >
@@ -177,13 +177,6 @@ const CRUDproduct = () => {
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title">Add New Product</h5>
-                <button
-                  type="button"
-                  className="close"
-                  onClick={() => setShowAddModal(false)}
-                >
-                  &times;
-                </button>
               </div>
               <div className="modal-body">
                 <input
@@ -245,13 +238,6 @@ const CRUDproduct = () => {
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title">Update Product</h5>
-                <button
-                  type="button"
-                  className="close"
-                  onClick={() => setShowUpdateModal(false)}
-                >
-                  &times;
-                </button>
               </div>
               <div className="modal-body">
                 <input
