@@ -26,6 +26,7 @@ const CRUDproduct = () => {
   useEffect(() => {
     fetchProducts();
   }, []);
+
   // API를 통해 모든 데이터를 불러온다.
   const fetchProducts = () => {
     fetch("https://672883cb270bd0b97555dbc6.mockapi.io/products")
@@ -57,6 +58,7 @@ const CRUDproduct = () => {
         console.error("Error adding product:", error);
       });
   };
+
   // Product 수정 기능
   const updateProduct = () => {
     fetch(
@@ -77,6 +79,7 @@ const CRUDproduct = () => {
         console.error("Error updating product:", error);
       });
   };
+
   // Product 삭제 기능
   const deleteProduct = (id) => {
     if (window.confirm("Are you sure you want to delete this product?")) {
@@ -93,8 +96,19 @@ const CRUDproduct = () => {
   };
 
   return (
-    <div className="container">
-      <h2>Products Management CRUD</h2>
+    <div
+      className="container"
+      style={{
+        textAlign: "center",
+      }}
+    >
+      <h2
+        style={{
+          fontSize: "50px",
+        }}
+      >
+        Products Management CRUD
+      </h2>
       <button className="btn btn-primary me-2" onClick={fetchProducts}>
         Bring all products data
       </button>
@@ -119,7 +133,8 @@ const CRUDproduct = () => {
             className="row mb-2 font-weight-bold text-black"
             style={{
               backgroundColor: "#d3d3d3",
-              padding: "10px",
+              padding: "5px",
+              fontSize: "25px",
             }}
           >
             <div className="col">Name</div>
