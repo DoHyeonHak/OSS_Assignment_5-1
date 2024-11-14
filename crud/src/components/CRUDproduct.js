@@ -132,9 +132,8 @@ const CRUDproduct = () => {
           <div
             className="row mb-2 font-weight-bold text-black"
             style={{
-              backgroundColor: "lightgray",
               padding: "4px",
-              fontSize: "25px",
+              fontSize: "20px",
             }}
           >
             <div className="col">Name</div>
@@ -151,7 +150,7 @@ const CRUDproduct = () => {
               <div className="col">{product.category}</div>
               <div className="col">
                 <button
-                  className="btn btn-warning btn-sm"
+                  className="btn btn-info btn-sm text-white"
                   onClick={() => {
                     setCurrentProduct(product);
                     setShowUpdateModal(true);
